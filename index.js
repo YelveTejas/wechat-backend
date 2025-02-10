@@ -26,7 +26,7 @@ const server = app.listen(port, () => {
 const io = new SocketIOServer(server, {
   pingTimeout: 60000,
   cors: {
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000","https://chatspehre.netlify.app"]
   },
 });
 
